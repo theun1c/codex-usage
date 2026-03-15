@@ -1,0 +1,64 @@
+# Шаблоны codex/config.toml
+# Выберите профиль под задачу и адаптируйте поля под вашу среду.
+
+############################
+# 1) Безопасный read-only
+############################
+[profile.readonly.model]
+name = "gpt-5.2-codex"
+reasoning_effort = "medium"
+
+[profile.readonly.project]
+root = "."
+
+[profile.readonly.sandbox]
+mode = "read-only"
+network_access = false
+
+[profile.readonly.tools]
+shell = true
+git = false
+
+############################
+# 2) Обычная разработка
+############################
+[profile.dev.model]
+name = "gpt-5.2-codex"
+reasoning_effort = "medium"
+
+[profile.dev.project]
+root = "."
+
+[profile.dev.sandbox]
+mode = "workspace-write"
+network_access = true
+
+[profile.dev.tools]
+shell = true
+git = true
+
+[profile.dev.mcp]
+enabled = true
+# servers = ["filesystem", "github"]
+
+############################
+# 3) CI/автоматизация
+############################
+[profile.ci.model]
+name = "gpt-5.2-codex"
+reasoning_effort = "low"
+
+[profile.ci.project]
+root = "."
+
+[profile.ci.sandbox]
+mode = "workspace-write"
+network_access = false
+
+[profile.ci.tools]
+shell = true
+git = true
+
+[profile.ci.reporting]
+require_tests = true
+require_diff_summary = true
