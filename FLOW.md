@@ -1,4 +1,4 @@
-# AI Development Workflow (Personal Guide)
+# AI Development Workflow (Personal)
 
 ## Общая философия
 
