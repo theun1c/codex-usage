@@ -225,19 +225,7 @@ enabled = true
 
 ---
 
-## 11) Дорожная карта этого репозитория
-
-Пункты дорожной карты **выполнены**:
-
-- [x] Добавить примеры `AGENTS.md` для разных типов проектов → `examples/agents/`.
-- [x] Добавить раздел с шаблонами `codex/config.toml` → `docs/config-templates/codex.config.templates.toml`.
-- [x] Добавить практические кейсы по Skills → `docs/skills/practical-cases.md`.
-- [x] Добавить примеры подключения MCP-серверов → `docs/mcp/mcp-server-examples.md`.
-- [x] Добавить FAQ по частым ошибкам и отладке → `docs/faq/troubleshooting.md`.
-
----
-
-## 12) Короткий итог
+## 11) Короткий итог
 
 Если описать в двух фразах:
 
